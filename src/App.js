@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react'
+import Counter from './useState/Counter'
+import Info from './useEffect/Info'
 
 function App() {
+  const [visible, setVisible] = useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Counter></Counter>
+      <button
+        onClick={() => {
+          setVisible(!visible)
+        }}
+      >
+        {visible ? '숨기기' : '보이기'}
+      </button>
+      {visible && <Info />}
+    </>
+  )
 }
 
-export default App;
+export default App
