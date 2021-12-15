@@ -6,6 +6,9 @@ import AxiosTest from './Axios'
 import Profile from './useEffect/Object'
 import Button from './useEffect/Button'
 import GetAPI from './useEffect/GetAPI'
+import Main from './useContext/Main'
+import InputSample from './useRef/InputSample'
+import Variable from './useRef/Variable'
 
 function App() {
   const [visible, setVisible] = useState(false)
@@ -33,6 +36,8 @@ function App() {
           <Route path="/Profile" element={<Profile />}></Route>
           <Route path="/button" element={<Button />}></Route>
           <Route path="/GetAPI" element={<GetAPI />}></Route>
+          <Route path="/Main" element={<Main />}></Route>
+          <Route path="/InputSample" element={<InputSample />}></Route>
         </Routes>
       </BrowserRouter>
     </>
