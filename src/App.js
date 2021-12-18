@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Counter from './useState/Counter'
 import Info from './useEffect/Info'
@@ -9,6 +9,7 @@ import GetAPI from './useEffect/GetAPI'
 import Main from './useContext/Main'
 import InputSample from './useRef/InputSample'
 import Variable from './useRef/Variable'
+import State from './State/App'
 
 function App() {
   const [visible, setVisible] = useState(false)
@@ -38,6 +39,8 @@ function App() {
           <Route path="/GetAPI" element={<GetAPI />}></Route>
           <Route path="/Main" element={<Main />}></Route>
           <Route path="/InputSample" element={<InputSample />}></Route>
+          <Route path="/Variable" element={<Variable />}></Route>
+          <Route path="/State" element={<State />}></Route>
         </Routes>
       </BrowserRouter>
     </>

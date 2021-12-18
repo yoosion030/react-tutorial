@@ -20,10 +20,6 @@ function Variable() {
     },
   ]
 
-  const nextId = useRef(4)
-  const onCreate = () => {
-    nextId.current += 1
-  }
   return <UserList users={users} />
 }
 
