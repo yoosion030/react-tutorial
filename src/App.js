@@ -10,6 +10,7 @@ import Main from './useContext/Main'
 import InputSample from './useRef/InputSample'
 import Variable from './useRef/Variable'
 import State from './State/App'
+import UseInput from './UseInput'
 
 function App() {
   const [visible, setVisible] = useState(false)
@@ -41,6 +42,7 @@ function App() {
           <Route path="/InputSample" element={<InputSample />}></Route>
           <Route path="/Variable" element={<Variable />}></Route>
           <Route path="/State" element={<State />}></Route>
+          <Route path="/useInput" element={<UseInput />}></Route>
         </Routes>
       </BrowserRouter>
     </>
