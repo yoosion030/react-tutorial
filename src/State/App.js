@@ -26,6 +26,13 @@ class State extends React.Component {
   }
 
   render() {
+    const increaseCurrentValue = () => ({
+      type: 'INCREASE_VALUE',
+    })
+
+    const decreaseCurrentValue = () => ({
+      type: 'DECREASE_VALUE',
+    })
     return (
       <div>
         <Result sum={this.state.value} />
